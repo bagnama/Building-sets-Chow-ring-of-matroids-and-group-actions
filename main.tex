@@ -115,7 +115,7 @@ Given a matroid $\mathcal{M}$ of rank $r+1$ and defined $\omega_k$ as the absolu
 
 In 2018 Adiprasito, Huh and Katz \cite{adiprasito2018hodgetheorycombinatorialgeometries} prove these conjectures using as main tool a certain graded $\mathbb{Z}$-algebra $A = \bigoplus_{k=0}^r A^k$ associated to a matroid, called the Chow ring,  
 introduced in 2004 by Feichtner and Yuzvinsky \cite{Feichtner_2004}.
-In particular they proved the Kahler package which is composed of three results about the ring $A$ that are the Poincarè duality, Hard Lefschetz and Hodge-Riemann relation. In particular they prove that the sequence $(a_1, \dots, a_k)$ with $a_k = rk_{\mathbb{Z}} A^k$ is unimodal as a consequence of Hard Lefschetz and symmetric as a consequence of Poincarè duality.
+In particular they proved the Kähler package which is composed of three results about the ring $A$ that are the Poincarè duality, Hard Lefschetz and Hodge-Riemann relation. In particular they prove that the sequence $(a_1, \dots, a_k)$ with $a_k = rk_{\mathbb{Z}} A^k$ is unimodal as a consequence of Hard Lefschetz and symmetric as a consequence of Poincarè duality.
 In the realizable case the Chow ring is isomorphic to he cohomology of the De Concini-Procesi wonderful model introduced by De Concini and Procesi in \cite{DP1}.
 
 The Chow ring is dependent on the choice of a building set.  In  \cite{adiprasito2018hodgetheorycombinatorialgeometries} they considered the Chow ring associated to the maximal building set and under this assumptions they proved the Kahler package. It was later generalized by Pagaria and Pezzoli for general building sets in 2023 \cite{Pagaria_2023} and by Crowley, Huh, Larson, Simpson, and Wang in 2024 \cite{crowley2024bergmanfanpolymatroid}.
@@ -1542,8 +1542,6 @@ Given a lattice $\mathcal{L}$ we denote with $\mathbb{B}(\mathcal{L})$ the famil
     \[ A, B \in \mathbb{S}, \, A \wedge B := A \cap B.\]
 \end{defn}
 
-
-
 We recall here the definitions of $\mathcal{I}(\mathcal{L})$, and $\mathcal{D}(x)$ for a lattice $\mathcal{L}$.
 
 \begin{defn}
@@ -1705,17 +1703,17 @@ Convex geometries are a combinatorial abstraction of convex sets in $\mathbb{R}^
     so $co(A \cup \{y\}) = co(A \cup \{x\})$. Contradiction since $x\neq y$.
 \end{es}
 
-We want now to define antimatroids and investigate the connection with convex geometries. 
+We want now to define anti-matroids and investigate the connection with convex geometries. 
 
 \begin{defn}
-    An antimatroid is a set system $(\mathcal{E}, \mathbb{S})$ sucht that:
+    An anti-matroid is a set system $(\mathcal{E}, \mathbb{S})$ such that:
     \begin{enumerate}
         \item $\emptyset \in \mathbb{S}$
         \item for every $A, B \in \mathbb{S}$ such that $ B \not\subset A$, there exists $e \in B \setminus A$ such that $A \cup \{ e \} \in \mathbb{S}$.
     \end{enumerate}
 \end{defn}
 
-\begin{es} A simple example of antimatroid is:
+\begin{es} A simple example of anti-matroid is:
 
     \begin{figure}
     \begin{center} \begin{tikzpicture}
@@ -1748,7 +1746,7 @@ We want now to define antimatroids and investigate the connection with convex ge
         \draw[thick] (n6) -- (bottom);
             
     \end{tikzpicture} \end{center}
-    \caption{The Hasse diagram of an antimatroid.}
+    \caption{The Hasse diagram of an anti-matroid.}
     \label{fig:antimat}
     \end{figure}
 \end{es}
@@ -1758,7 +1756,7 @@ Let's define the dual notion of set system.
     Let $(\mathcal{E}, \mathbb{S})$ be a set system. We define the complementary set system of $(\mathcal{E}, \mathbb{S})$ as the set system $(\mathcal{E}, \mathbb{S}^c).$
 \end{defn}
 
-It's possible to prove that a set system $(\mathcal{E}, \mathbb{S})$ is an antimatroid if and only if the complementary set system $(\mathcal{E}, \mathbb{S}^c)$ is a convex geometry. Thus we can alternately define convex geometries as the dual notion of antimatroids.
+It's possible to prove that a set system $(\mathcal{E}, \mathbb{S})$ is an anti-matroid if and only if the complementary set system $(\mathcal{E}, \mathbb{S}^c)$ is a convex geometry. Thus we can alternately define convex geometries as the dual notion of anti-matroid.
 
 \begin{defn} \label{def:convgeo2}
     A convex geometry is a set system $(\mathcal{E}, \mathbb{S})$ such that:
@@ -1787,8 +1785,6 @@ So there exists a minimum element $z \in U$ such that $z \notin V$, and since $z
 Thus $(\mathcal{P}, \mathcal{U})$ is a convex geometry.
 \end{es}
 
-
-
 We now prove that a convex geometry is an intersection lattice.
 
 \begin{prop} \label{prop:convgeointla}
@@ -1799,10 +1795,10 @@ We now prove that a convex geometry is an intersection lattice.
     Let $A, B \in \mathbb{S}$. By condition (2) of Definition \ref{def:convgeo2} we can take an element $e \in A \setminus B$, remove it from $A$ and obtain that $A \setminus\{e\} \in \mathbb{S}$. Repeating this process we can remove all elements in $A \setminus B$ and obtain the set $A \cap B$. By condition (2) we have $A \cap B \in \mathbb{S}$. Hence given $A, B \in \mathbb{S}$ we have $A \cap B \in \mathbb{S}$ and thus $\mathbb{S}$ is an intersection meet-semilattice with a maximum elements $\mathcal{E}$, hence $\mathbb{S}$ is an intersection lattice.
 \end{proof}
 
-We introduce now the supersolvable version of antimatroids, convex geometries and closure operator, and investigate their relation with building sets.
+We introduce now the supersolvable version of anti-matroids, convex geometries and closure operator, and investigate their relation with building sets.
 
 \begin{defn}
-    Let $(\mathcal{E}, \mathbb{S})$ be a set system. Let $<$ be a total order on $\mathcal{E}$. We say that $\mathbb{S}$ is a supersolvable antimatroid if:
+    Let $(\mathcal{E}, \mathbb{S})$ be a set system. Let $<$ be a total order on $\mathcal{E}$. We say that $\mathbb{S}$ is a supersolvable anti-matroid if:
     \begin{enumerate}
         \item $\emptyset \in \mathbb{S}$;
         \item for every $A, B \in \mathbb{S}$ with $B \not\subseteq A$, for $e = \min_{<}(B \setminus A)$ we have $A \cup \{ e \} \in \mathbb{S}$.
@@ -1825,7 +1821,7 @@ Thus one has the following dual definition of supersolvable convex geometries.
     Let $\mathcal{L}$ be a finite lattice and $B \in \mathbb{B}(\mathcal{L})$. Let $<$ be a linear extension of $\mathcal{L}$, then $x = \min_<(B \setminus I(\mathcal{L}))$ we have $B \setminus \{x \} \in \mathbb{B}(\mathcal{L})$.
 \end{prop}
 
-Proposition \ref{prop:buildsetlinearext} is a direct conseguence of Definition \ref{def:scg} and next proposition which is, in fact, an extension of the latter.
+Proposition \ref{prop:buildsetlinearext} is a direct consequence of Definition \ref{def:scg} and next proposition which is, in fact, an extension of the latter.
 
 \begin{prop} \label{prop:bsetsupersolvale}
     Let $\mathcal{L}$ be a finite lattice, then $(\mathcal{L}\setminus\{\hat{0}\}, \mathbb{B}(\mathcal{L}))$ is a supersolvable convex geometry with respect to any linear extension on $\mathcal{L}$.
@@ -1943,13 +1939,10 @@ This proposition gives us an algorithmic method to produce building sets:
 \end{enumerate}
 
 
-
-
-
 \newpage
-\chapter{Chow ring, monomial basis and Kahler package}
+\chapter{Chow ring, monomial basis and Kähler package}
 
-In this chapter we define the Chow ring $\mathcal{A}(\mathcal{L}, \mathcal{G})$ associated to a lattice $\mathcal{L}$ and a building set $\mathcal{G}$. Then we provide a monomial basis for $\mathcal{A}(\mathcal{L}, \mathcal{G})$ and discuss the Kahler package. We finish with a brief introduction to De Concini-Procesi wonderful model and a geometrical interpretations for $\mathcal{A}(\mathcal{L}, \mathcal{G})$.
+In this chapter we define the Chow ring $\mathcal{A}(\mathcal{L}, \mathcal{G})$ associated to a lattice $\mathcal{L}$ and a building set $\mathcal{G}$. Then we provide a monomial basis for $\mathcal{A}(\mathcal{L}, \mathcal{G})$ and discuss the Kähler package. We finish with a brief introduction to De Concini-Procesi wonderful model and a geometrical interpretations for $\mathcal{A}(\mathcal{L}, \mathcal{G})$.
 
 \section{Chow ring and monomial basis}
 
@@ -2110,7 +2103,7 @@ Thus the elements in the monomial basis \ref{monbase} are all generated by $\mat
 \end{cor}
 
 \begin{proof}
-    We already proved that if $g \in G$, and $N \subset \mathcal{G}$ is a $\mathcal{G}$-nested set then $g(N)$ is a $\mathcal{G}$-nested set, and since $g \in G$ are lattice automoprhisms we have that $g(\vee N) = \vee g(N)$.
+    We already proved that if $g \in G$, and $N \subset \mathcal{G}$ is a $\mathcal{G}$-nested set then $g(N)$ is a $\mathcal{G}$-nested set, and since $g \in G$ are lattice automorphisms we have that $g(\vee N) = \vee g(N)$.
     Since we previously proved that if $a \in \mathcal{L}$ is an atom then $g(a)$ is also an atom, we can observe that $d(F, F') = d(g(F), g(F'))$ in fact: 
     \begin{equation*}
         \begin{aligned}
@@ -2260,6 +2253,360 @@ where the relation $\sim$ is defined as:
 If the vector space $V$ is on $\mathbb{R}$ the relation is defined with $\lambda \in \mathbb{R}$.
 We also have a natural projection map $\pi:V  \setminus \{ 0 \}  \longrightarrow\mathbb{P}(V)$.
 
+The space $\mathbb{P}(V)$ parametrizes 1-dimensional subspaces of $V$.
+
+Given $X$ a subset of $V$, we shall denote by $<X>$ the subspace of $V$ generated by the elements of $X$.
+
+Consider now a subspace arrangement $\mathcal{A} := \{ H_i \, : \, i \in I \}$ in $V$ and define the complement of $\mathcal{A}$ as:
+\[ \mathcal{M}(\mathcal{A}) := \bigcup_{i \in I} V \setminus H_i.\]
+For each $H_i \in \mathcal{A}$ there exists two natural projection maps:
+\[ p : V \longrightarrow \faktor{V}{H_i} \text{ and } \pi:\faktor{V}{H_i} \setminus \{ 0 \} \longrightarrow \mathbb{P} \left( \faktor{V}{H_i} \right).\]
+Thus composition $\pi \circ p$ is a surjective map:
+\[ \pi_{H_i} : V \setminus H_i \longrightarrow \faktor{V}{H_i} \setminus \{ 0 \} \longrightarrow \mathbb{P} \left( \faktor{V}{H_i} \right)\]
+defined outside $H_i$, and thus we can define a regular morphism 
+\[ \mathcal{M}(\mathcal{A}) \longrightarrow \prod_{i \in I} \mathbb{P} \left( \faktor{V}{H_i} \right) .\]
+The graph of this morphism is a closed subset of $\mathcal{M}(\mathcal{A}) \times \prod_{i \in I} \mathbb{P} \left( \faktor{V}{H_i} \right)$ with embeds as open subset in $V \times \prod_{i \in I} \mathbb{P}\left( \faktor{V}{H_i}\right)$.
+Finally we have an embedding
+\[ \rho \, : \, \mathcal{M}(\mathcal{A}) \longrightarrow V \times \prod_{i \in I} \mathbb{P} \left( \faktor{V}{H_i} \right).\]
+Explicitly the map $\rho$ act like this: 
+\[\rho(x) = \left(x, \, \left(\frac{<x, H_i>}{H_i}\right)_{i \in I} \right),\]
+and we use it to define the De Concini-Procesi model:
+
+\begin{defn} \label{DP:proj}
+We define the De Concini-Procesi wonderful model for $\mathcal{A}$ as the closure of $\rho(\mathcal{M}(\mathcal{A}))$ and we denote it by $Y_\mathcal{A}$.    
+\end{defn}
+
+Another possible definition of the De Concini-Procesi wonderful model is given by successive blow-ups of subspaces. We first define what is a linear extension if a lattice.
+
+\begin{defn}
+    Let $\mathcal{L}$ a lattice and $\le$ $\le^*$ two order relations on $\mathcal{L}$. $\le^*$ is a linear extension of $(\mathcal{L}, \le)$ when
+    \begin{enumerate}
+        \item $\le^*$ is a total order;
+        \item given $x,y \in \mathcal{L}$ 
+        \[ x \le y \implies x \le^* y.\]
+    \end{enumerate}
+\end{defn}
+
+We give here some notions about blowups in $\mathbb{C}^n$ in order to give the second definition of the De Concini-Procesi wonderful model.
+
+\begin{defn}
+    Let $n \in \mathbb{N}$ and consider the space $\mathbb{C}^n$ with coordinates $z_1, \dots, z_n$ and the space $\mathbb{P}^{n-1}$ with homogeneous coordinates $[x_1: \dotsc :x_n]$. We define the blowup of $\mathbb{C}^n$ at $0$ as the subset of $\mathbb{C}^n \times \mathbb{P}^{n-1}$
+    \[ Bl_{\{ 0 \}} \mathbb{C}^n := \{ (z,x) \in \mathbb{C}^n \times \mathbb{P}^{n-1} \, : \, z_i x_j = z_j x_i, \, i,j=1, \dots, n \},\]
+    with a projection map
+    \[ \sigma : Bl_{\{0\}} \mathbb{C}^n \longrightarrow \mathbb{C}^n\]
+    called blow up map, given by $\sigma(z,x) = z$.
+\end{defn}
+
+We are essentially substituting every point in $\mathbb{C}^n$ with a copy of $\mathbb{P}^{n-1}$. We define the exceptional divisor to be the preimage of $\{ 0 \}$ via $\sigma$
+\[ E := \sigma^{-1}(\{0 \}).\]
+Let now $C \subset \mathbb{C}^n$ be a subspace, then we call 
+\[ C' := \overline{\sigma^{-1}( C \setminus \{ 0\})} \]
+the proper transform of $C$, and
+\[ \sigma^{-1}(C)\]
+the total transform of $C$.
+
+We can generalize the above definition in he case of linear subspaces.
+\begin{defn}
+    Let $\mathbb{C}^m \subset \mathbb{C}^n$ be the linear subspace satisfying the conditions 
+    \[ z_{m+1} = 0, \dots, z_n =0,\]
+    and denote with $[x_{m+1}: \dots :x_n]$ the homogeneous coordinates of $\mathbb{P}^{n-m-1}$. We define the blow up of $\mathbb{C}^n$ in $\mathbb{C}^m$ as the subset of $\mathbb{C}^n \times \mathbb{P}^{n-m-1}$
+    \[ Bl_{\mathbb{C}^m} \mathbb{C}^n := \{ (z,x) \in \mathbb{C}^n \times \mathbb{P}^{n-m-1} \, : \, z_j x_i = z_i x_j, \, i,j = m+1, \dots, n \}\]
+    with a blow up map 
+    \[ \sigma :Bl_{\mathbb{C}^m} \mathbb{C}^n \longrightarrow \mathbb{C}^n\]
+    defined as $\sigma(z,x) = z.$
+\end{defn}
+
+In this case the exceptional divisor is defined as 
+\[ E := \sigma^{-1}(\mathbb{C}^m)\]
+and given a subspace $V \subset \mathbb{C}^n$ properly containing $\mathbb{C}^m$ then we define 
+\[ \overline{V} := \overline{\sigma^{-1}(V \setminus \mathbb{C}^m)} \]
+the proper transform of $V$, and
+\[ \sigma^{-1}(V) \]
+the total transform of $V$.
+
+We can now define the blow up version of the De Concini-Procesi wonderful model.
+
+\begin{defn} \label{DP:blowup}
+    Let $\mathcal{A}$ be an arrangements of real or complex linear subspaces in $V$. Let $X_1, \dots, X_t$ be a linear extension of the opposite order $\mathcal{L}(\mathcal{A})^{op}_{> \hat{0}}$ on $\mathcal{L}(\mathcal{A})_{> \hat{0}}$. The De Concini - Procesi wonderful model $Y_{\mathcal{A}}$ for $\mathcal{A}$ is a result of successively blowing up subspaces $X_1, \dots, X_t$ and respectively their proper transforms.
+\end{defn} 
+
+\begin{es}
+    Consider the braid arrangements model $\mathcal{A}_2$ in 
+    $V = \faktor{\mathbb{R}^3}{\Delta} \simeq \mathbb{R}^2$ where $\Delta$ is the diagonal in $\mathbb{R}^3$.
+    Choosing in $\mathbb{R}^3$ the coordinates $(X_1, X_2, X_3)$, the arrangements $\mathcal{A}_2$ is 
+    \begin{center} $ \left\{\begin{matrix}
+    X_1 - X_2 = 0 \\ X_2 - X_3 = 0 \\ X_1 - X_3 = 0.  
+    \end{matrix}\right.$ \end{center}
+    Considering in $V$ the basis 
+    \begin{center} $ \left\{\begin{matrix}
+    x = X_1 - X_2 \\y = X_2 - X_3 
+    \end{matrix}\right.$ \end{center}
+    we obtain \[x + y = X_1 - X_2 + X_2 -  X_3 = X_1 - X_3,\] so in $V$ the arrangement is 
+    \begin{center} $ \left\{\begin{matrix*}[l]
+    x = 0 \\ 
+    y = 0 \\ 
+    x+y = 0.
+    \end{matrix*}\right.$ \end{center}
+    Following the construction of Definition \ref{DP:blowup}, the De Concini-Procesi wonderful model $Y_{\mathcal{A}_2}$ is the blowup of $V$ at $\{0\}$. 
+    The blow up map is
+    \[ \sigma: Bl_{\{0\}}V = Y_{\mathcal{A}_2} \longrightarrow V,\]
+    and the result is an open Möbius band. The exceptional divisor, $D_{123} = \sigma^{-1}(\{0\}) \simeq \mathbb{RP}^1$, intersects transversally wit hthe proper trasnforms $D_{ij}$ of the hyperplanes $H_{ij}$ for $1 \le j < j \le 3$.
+\end{es}
+
+\begin{defn}
+    Let $\mathcal{L}$ a lattice, define the order complex $\Delta(\mathcal{L})$ of $\mathcal{L}$ as the complex whose elements are the chains of $\mathcal{L}$.    
+\end{defn}
+
+Now we enunciate some properties of the model. 
+
+\begin{thm}
+    \begin{enumerate}
+        \item The arrangement model $Y_{\mathcal{A}}$ is a smooth variety with a natural projection map to the original ambient space
+        \[ \pi:Y_{\mathcal {A}} \longrightarrow V,\]
+        which is one-to-one on the arrangement complement $\mathcal{M}(\mathcal{A})$.
+
+        \item The complement of $\pi^{-1}(\mathcal{M}(\mathcal{A}))$ in $Y_{\mathcal{A}}$ is a divisor with normal crossings; the irreducible componnents are the proper transforms $D_X$ of intersections $X$ in $\mathcal{L}(\mathcal{A})$,
+        \[ Y_{\mathcal{A}} \setminus \pi^{-1}(\mathcal{M}(\mathcal{A})) = \bigcup_{X \in \mathcal{L}(\mathcal{A}) \setminus \{\hat{0}\}} D_X.\]
+
+        \item Irreducible components $D_X$ for $X \in \mathcal{A} \subseteq 
+        \mathcal{L}(\mathcal{A})_{\ge \hat{0}}$ intersects if and only if $\mathcal{S}$ is a linearly ordered subset in  $\mathcal{L}(\mathcal{A})_{\ge \hat{0}}$. If we think about $Y_{\mathcal{A}}$ as stratified by the irreducible components of the normal crossing divisor and their intersections, then the poset of strata coincides with the face poset of the order complex $\Delta(\mathcal{L}_{\ge \hat{0}})$.
+    \end{enumerate}
+\end{thm}
+
+In Chapter 1 we studied the geometry of the family of building set in a lattice $\mathcal{L}$.
+Here we want to briefly investigate the information encoded in the set complex $\mathcal{N}(\mathcal{L}, \mathcal{G})$ and later on we give a geometrical interpretation of the Chow ring $\mathcal{A}(\mathcal{L}, \mathcal{G})$.
+
+\begin{comment}
+We start observing that given a finite lattice $\mathcal{L}$, if $\mathcal{G} = \mathcal{L} \setminus \{\hat{0}\}$ then
+\[ \mathcal{N}(\mathcal{L}, \mathcal{L} \setminus \{ \hat{0} \}) = \Delta(\mathcal{L}\setminus \{ \hat{0} \}). \] 
+
+Consider the following example.
+\begin{es}
+    
+\end{es}
+
+\begin{thm}
+    Let $\mathcal{L}$ be a finite lattice, and $\mathcal{G} \subset \mathcal{L}$ a building set, then the nested sets complex $\mathcal{N}(\mathcal{L}, \mathcal{G})$ is homotopy equivalent to the order complex $\Delta(\mathcal{L}\setminus \{\ \hat{0} \}).$
+Moreover, if $\mathcal{L}$ is atomic, $\mathcal{G}, \mathcal{H} \subset \mathcal{L}$ two building sets such that $\mathcal{H} \subseteq \mathcal{G}$, then the nested sets complex $\mathcal{N}(\mathcal{L}, \mathcal{G})$ is obtained by the nested set complex $\mathcal{N}(\mathcal{L}, \mathcal{H})$ by a sequence of stellar subdivisions. In particular the complexes are homeomorphic.
+\end{thm}
+\end{comment}
+
+We start by describing a combinatorial version of blowup for a finite meet semilattice.
+
+\begin{defn}
+    Let $\mathcal{L}$ be a finite meet semilattice, for an element $X \in \mathcal{L} \setminus \{ \hat{0}\}$, we define a poset $(Bl_X \mathcal{L}, \prec)$ on the set of elements
+    \[ Bl_X \mathcal{L} :=\{ Y \, : \, Y \in \mathcal{L}, \, Y \not \ge X \} \cup \{ Y' \, : \, Y \in \mathcal{L}, \, Y \not \ge X, \text{ and $Y \vee X$ exists in $\mathcal{L}$} \}.\]
+    The order relation $<$ determine the order $\prec$ on $Bl_X \mathcal{L}$ as
+    \[ Y \prec Z, \text{ if $Y < Z$ in $\mathcal{L}$}\]
+    \[ Y' \prec Z', \text{ if $Y < Z$ in $\mathcal{L}$}\]
+and
+    \[Y \prec Z', \text{ if $Y < Z$ in $\mathcal{L}$}\]
+    for all $Y, Z \not \ge X$ in $\mathcal{L}$.
+    We call $(Bl_X \mathcal{L}, \prec)$ combinatorial blowup of $\mathcal{L}$ in $X$.
+\end{defn}
+
+For example.
+\begin{es}
+    Consider the lattice $\Pi_3$ of partitions of the set $\{1,2,3\}$. We want to compute the combinatorial blowup of 
+    $\Pi_3$ in the element $123$, $Bl_{123} \Pi_3$.
+
+    \begin{center} \begin{tikzpicture}
+    
+        \node[red, draw, fill, circle, scale =0.5,  label =0:123] (top) at (-10,0) {};
+        \node[draw, fill, circle, scale =0.5,  label = 180:12] (n1) at (-11,-1.2) {};       
+        \node[draw, fill, circle, scale =0.5,  label = 180:13] (n2) at (-10,-1.2) {};
+        \node[draw, fill, circle, scale =0.5,  label = 0:23] (n3) at (-9,-1.2) {};
+
+        \node[draw, fill, circle, scale =0.5] (bot) at (-10,-2.4) {};
+
+        \draw[thick] (top) -- (n1);
+        \draw[thick] (top) -- (n2);
+        \draw[thick] (top) -- (n3);
+        \draw[thick] (bot) -- (n1);
+        \draw[thick] (bot) -- (n2);
+        \draw[thick] (bot) -- (n3);
+
+        \node (f1) at (-8, -1.2){};
+        \node (f2) at (-6, -1.2){};
+
+        \draw[->] (f1) -- (f2);
+
+        \node[draw, fill, circle, scale =0.5,  label = 180:12] (n4) at (-5,-2) {};       
+        \node[draw, fill, circle, scale =0.5,  label = 180:13] (n5) at (-4,-2) {};
+        \node[draw, fill, circle, scale =0.5,  label = 0:23] (n6) at (-3,-2) {};
+
+        \node[draw, fill, circle, scale =0.5] (bot2) at (-4,-3.2) {};
+        \draw[thick] (bot2) -- (n4);
+        \draw[thick] (bot2) -- (n5);
+        \draw[thick] (bot2) -- (n6);
+
+        \node[draw, green, fill, circle, scale =0.5,  label = 90:12'] (n7) at (-2,-0.8) {};
+        \node[draw, green, fill, circle, scale =0.5,  label = 90:13'] (n8) at (-1,-0.8) {};
+        \node[draw, green, fill, circle, scale =0.5,  label = 0:23'] (n9) at (0,-0.8) {};
+
+        \node[draw, red, fill, circle, scale =0.5] (bot3) at (-1,-2) {};
+
+        \draw (bot3) -- (n7);
+        \draw (bot3) -- (n8);
+        \draw (bot3) -- (n9);
+
+        \draw (bot2) -- (bot3);
+        \draw (n4) -- (n7);
+        \draw (n5) -- (n8);
+        \draw (n6) -- (n9);
+        
+        \end{tikzpicture} \end{center}
+    
+\end{es}
+
+We define now the face poset of a set complex which will give us the first interpretations in $\mathcal{N}(\mathcal{L}, \mathcal{G})$.
+
+\begin{defn}
+    Let $\mathcal{S}$ be a set, and $\Delta \subset \mathcal{P}(\mathcal{S})$ a set complex. An element $X \in \Delta$ si called a face, and the set $\mathcal{F}(\Delta)$ is the poset of faces of $\Delta$ ordered by inclusion.
+\end{defn}
+
+The following theorem shows that the three concept introduced above: combinatorial building sets, nested sets and combinatorial blowups fit toghether providing a combinatorial analogue of the De Concini-Procesi model construction.
+
+\begin{thm}
+    Let $\mathcal{L}$ be a lattice, $\mathcal{G}$ a combinatorial building set in $\mathcal{L}$, $G_1, \dots, G_t$ a linear order on $\mathcal{G}$ that is non-increasing with repsect to the partial order on $\mathcal{L}$. Then, consecutive combinatorial blowups in $G_1, \dots, G_t$ resutls in the face poset of the nested set complex $\mathcal{N}(\mathcal{L}, \mathcal{G})$:
+    \[ Bl_{G_t}(\dots(Bl_{G_2}(Bl_{G_1}\mathcal{L})) = \mathcal{F}(\mathcal{N}(\mathcal{L}, \mathcal{G}).\]
+
+\end{thm}
+
+Now we investigate the connection between these notions and the stratification in the wonderful model.
+We start by defining a notion of building set in the lattice of flats for a linear arrangements of subspaces.
+
+\begin{defn}
+    Let $\mathcal{A}$ a arrangements of subspaces in a real or complex vector space $V$, $\mathcal{L}(\mathcal{A})$ the intersection lattice associated to $\mathcal{A}$ and \[cd:\mathcal{L}(\mathcal{A}) \longrightarrow \mathbb{N}\]
+    defined as \[ cd(H) := codim_V(H).\]
+    A subset $\mathcal{G} \subset \mathcal{L}$ is a geometric building set if it is a building set in the sense of (3.1) and for any $X \in \mathcal{L} \setminus \{ \hat{0} \}$ the codimension of $X$ is equal to the sum of the codimension of its factors
+    \[ cd(X) = \sum_{Y \in F_{\mathcal{G}}(X)} cd(Y).\]
+\end{defn}
+
+The notion to combinatorial and geometrical building sets are not equivalent but coincide if $\mathcal{A}$ is an arrangements of hyperplanes.
+\begin{es}
+Let $\mathcal{A}$ be the arrangement of 3 subspaces in $\mathbb{R}^4$
+\[ A_1 : x_4 = 0, \, A_2 : x_1 = x_2 = 0, \, A_3 : x_1 = x_3 = 0\]
+
+We depict the intersection lattice $\mathcal{L}(\mathcal{A})$ with its codimension labeling.
+
+\begin{center} \begin{tikzpicture}
+    \node[draw, fill, circle, scale =0.5,  label = 180:4] (top) at (0,0) {};
+
+    \node[draw, fill, circle, scale =0.5,  label = 180:3] (n1) at (-2,-1.5) {};
+    \node[draw, fill, circle, scale =0.5,  label = 180:3] (n2) at (0,-1.5) {};
+    \node[draw, fill, circle, scale =0.5,  label = 180:3] (n3) at (2,-1.5) {};
+
+    \node[draw, fill, circle, scale =0.5,  label = 180:1] (n4) at (-2,-2.5) {};
+    \node[draw, fill, circle, scale =0.5,  label = 180:2] (n5) at (0,-2.5) {};
+    \node[draw, fill, circle, scale =0.5,  label = 180:3] (n6) at (2,-2.5) {};
+
+    \node[draw, fill, circle, scale =0.5,  label = 180:0] (bot) at (0,-4) {};
+
+    \draw (top) -- (n1);
+    \draw (top) -- (n2);
+    \draw (top) -- (n3);
+    \draw (n1) -- (n4);
+    \draw (n2) -- (n4);
+    \draw (n2) -- (n6);
+    \draw (n3) -- (n6);
+    \draw (bot) -- (n4);
+    \draw (bot) -- (n5);
+    \draw (bot) -- (n6);
+    \draw (n5) -- (n1);
+    \draw (n5) -- (n3);
+    
+\end{tikzpicture} \end{center}
+
+The set of atoms is a combinatorial building set. However, any geometric building set must contain the intersection $A_2 \cap A_3$ since its codimension is not the sum of codimension of it factors $A_2$ and $A_3$.
+\end{es}
+
+In definition \ref{DP:proj} and \ref{DP:blowup} we defined two model construction on the whole lattice $\mathcal{L}(\mathcal{A})$, but we can restrict the definition to a building set.
+Consider for instance a building set $\mathcal{G} \subseteq \mathcal{L}(\mathcal{A})$ where  $\mathcal{A} := \{ H_i \, : \, i \in I\}$ is a linear subspace arrangements in a real or complex vector space $V$. Consider the map \[ \rho : \mathcal{M}(\mathcal{A}) \longrightarrow V \times \prod_{H \in \mathcal{G}} \mathbb{P}\left( \faktor{V}{H} \right)\]
+as defined before and define $Y_{\mathcal{A},\mathcal{G}}$ as the closure of the image of $\rho$.
+
+The blow up version of the model si obtained substituting a linear extension of $\mathcal{L}_{> \hat{0}}$ with a non increasing order on $\mathcal{G}$, and successive blowing up subspaces in $\mathcal{G}$.
+
+The model $Y_{\mathcal{A}, \mathcal{G}}$ has the following properties
+
+\begin{thm}
+    \begin{enumerate}
+        \item The arrangement model $Y_{\mathcal{A}, \mathcal{G}}$ is a smooth variety with a natural projection map to the original ambient space
+        \[ \pi:Y_{\mathcal{A}, \mathcal{G}} \longrightarrow V,\]
+        which is one-to-one on the arrangement complement $\mathcal{M}(\mathcal{A})$.
+
+        \item The complement of $\pi^{-1}(\mathcal{M}(\mathcal{A}))$ in $Y_{\mathcal{A}, \mathcal{G}}$ is a divisor with normal crossings; the irreducible components are the proper transforms $D_X$ of intersections $X$ in $\mathcal{G}$,
+        \[ Y_{\mathcal{A}, \mathcal{G}} \setminus \pi^{-1}(\mathcal{M}(\mathcal{A})) = \bigcup_{X \in \mathcal{G}} D_X.\]
+
+        \item Irreducible components $D_X$ for $X \in \mathcal{S} \subseteq 
+        \mathcal{G}$ intersects if and only if $\mathcal{S}$ is a linearly ordered subset in  $\mathcal{G}$. If we think about $Y_{\mathcal{A}, \mathcal{G}}$ as stratified by the irreducible components of the normal crossing divisor and their intersections, then the poset of strata coincides with the face poset of nested sets complex $\mathcal{F}(\mathcal{N}(\mathcal{L}, \mathcal{G}))$.
+    \end{enumerate}
+\end{thm}
+
+\begin{comment}
+Thus given the model $Y_{\mathcal{A}, \mathcal{G}}$, the face poset of its stratification given by irreducible components of divesors and their intersections coincides with the face poset of the nested sets complex. So the nested sets complex encodes the combinatorics of strata in $Y_{\mathcal{A}, \mathcal{G}}$. 
+\end{comment}
+
+Summarizing we have that, given $\mathcal{A}$ a linear arrangements of subspaces in a real or complex vector space $V$, then
+\begin{enumerate}
+    \item[(1)] the lattice $\mathcal{L}(\mathcal{A})$ captures the combinatorics of the stratification of $V$ given by subspaces of $\mathcal{A}$ and their intersections;
+
+    \item[(2)] the nested set complex $\mathcal{N}(\mathcal{L}, \mathcal{G})$ captures the combinatorics of the divisors stratification of the wonderful model $Y_{\mathcal{A}, \mathcal{G}}$.
+\end{enumerate}
+
+In addition combinatorial blowups turns out to be the right concept to describe the change in the stratification poset during the successive blow up of subspaces in $\mathcal{G}$. 
+
+\begin{thm}
+Let $\mathcal{A}$ be a linear subspace arrangement a real or complex vector space $V$,
+$\mathcal{G}$ a geometric building set in $\mathcal{L}(\mathcal{A})$, and $G_1, \dots, G_t$ a non-increasing linear order on $\mathcal{G}$. 
+Let $Bl_i(\mathcal{A})$ denote the result of blowing up strata $G_1, \dots, G_i$, for
+$i \le t$, and denote by $\mathcal{L}_i$ the face poset of the stratification of $Bl_i(\mathcal{A})$ by proper transforms of subspaces in $\mathcal{A}$ and the exceptional divisors. Then the poset $\mathcal{L}_i$ coincides with the successive combinatorial blowups of $\mathcal{L}$ in $G_1, \dots, G_i$:
+\[ \mathcal{L}_i = Bl_{G_i}(\dots(Bl_{G_2}(Bl_{G_1}\mathcal{L}))\dots).\]
+\end{thm}
+
+We finish this chapter by giving a geometrical interpretations of the Chow ring $\mathcal{A}(\mathcal{L}, \mathcal{G})$.
+
+Consider a linear essential hyperplanes arrangement $\mathcal{A}$ in a complex vector space $V$. Then, as we already noted, in this case the combinatorical building sets and geometrical building sets are the same.
+Considering $\mathcal{G} \subset \mathcal{L}(\mathcal{A})$ a building set, we defined defined the Chow ring $\mathcal{A}(\mathcal{L}, \mathcal{G})$.
+
+The goal now is to define a projective version of the De Concini-Procesi wonderful model in order to give a geometrical meaning to $\mathcal{A}(\mathcal{L}, \mathcal{G})$.
+We start by defining the projectivization of an hyperplanes arrangement.
+
+\begin{defn}
+    Given an arrangement $\mathcal{A}$ as above, then define the projectivization of $\mathcal{A}$ as
+    \[ \mathbb{P}\mathcal{A} := \{ \mathbb{P}(H) \, : \, H \in \mathcal{A}  \}\]
+    and the complement
+    \[ \mathcal{M}(\mathbb{P}\mathcal{A}) := \mathbb{P}(V) \setminus \bigcup \mathbb{P}\mathcal{A}. \]
+    The lattice $\mathcal{L}(\mathbb{P}\mathcal{A})$ is defined as the lattice of intersections of $\mathbb{P}\mathcal{A}$.
+\end{defn}
+
+Then we define the projective De Concini-Procesi wonderful model.
+
+\begin{defn}
+    Let $\mathcal{A}$ be an arrangements of real or complex linear subspaces in $V$, and consider his projectivization $\mathbb{P}\mathcal{A}$ in $\mathbb{P}V$.
+    
+    Let $\mathbb{P}X_1, \dots, \mathbb{P}X_t$ be a linear extension of the opposite order $\mathcal{L}(\mathbb{P}\mathcal{A})^{op}_{> \hat{0}}$ on $\mathcal{L}(\mathbb{P}\mathcal{A})_{> \hat{0}}$. The projective De Concini-Procesi wonderful model $Y_{\mathcal{A}}^\mathbb{P}$ for $\mathbb{P}\mathcal{A}$ is a result of successively blowing up subspaces $\mathbb{P}X_1, \dots, \mathbb{P}X_t$, respectively their proper transforms.
+\end{defn}
+
+As we did before we can consider a building set $\mathcal{G} \subseteq \mathcal{L}(\mathbb{P}\mathcal{A})$, and define the projective version of the De Concini-Procesi model for building set. Denote this model with $Y_{\mathcal{A}, \mathcal{G}}^{\mathbb{P}}$
+
+Finally the following theorem gives us the geometric interpretation of the Chow ring. The proof of the theorem can be found in \cite{DP2}.
+\begin{thm}
+    Let $\mathcal{L} = \mathcal{L}(\mathcal{A})$ the lattice of a linear essential hyperplanes arrangement $\mathcal{A}$, and $\mathcal{G}$ a building set which contains the total intersections of $\mathcal{A}$. Then, $\mathcal{A}(\mathcal{L}, \mathcal{G})$ is isomophic to the integral cohomology algebra of the projective arrangement model $Y_{\mathcal{A},\mathcal{G}}^{\mathbb{P}}$
+    \[ \mathcal{A}(\mathcal{L}, \mathcal{G}) \simeq H^*(Y_{\mathcal{A},\mathcal{G}}^{\mathbb{P}}, \mathbb{Z}).\]
+\end{thm}
+
+\begin{comment} VERSION 2
+In this section we provide two different definitions of the De Concini-Procesi wonderful arrangement models. The first one describes the model as the closure of an open embeddings of the arrangement complement in a product of projective spaces. The second definition describes the model as the result of a sequence of blowups of $\mathbb{P}^n$ along certain subspaces.
+A more complete treatment of these arguments can be found in \cite{feichtner2004conciniprocesiwonderfularrangementmodels}.
+
+Consider a vector space $V$ of finite dimension on a field $\mathbb{K}$, we define the projective space on $V$ as the quotient:
+\[ \mathbb{P}(V) := \frac{V \setminus \{ 0\}}{\sim} \]
+where the relation $\sim$ is defined as:
+\[ v \sim w \iff \exists \lambda \in \mathbb{K} \text{ such that } v = \lambda w.\]
+If the vector space $V$ is on $\mathbb{R}$ the relation is defined with $\lambda \in \mathbb{R}$.
+We also have a natural projection map $\pi:V  \setminus \{ 0 \}  \longrightarrow\mathbb{P}(V)$.
+
 The space $\mathbb{P}(V)$ parametrizes 1-dimensional subspace of $V$.
 
 Given $X$ a subset of $V$, we shall denote by $<X>$ the subspace of $V$ generated by the elements of $X$.
@@ -2285,7 +2632,6 @@ We define the De Concini-Procesi wonderful model for $\mathcal{A}$ as the closur
 
 Another possible definition of the De Concini-Procesi wonderful model is given by successive blow-ups of subspaces.
 
-\begin{comment}
 \begin{defn}
     Let $\mathcal{L}$ a lattice and $\le$ $\le^*$ two order relations on $\mathcal{L}$. $\le^*$ is a linear extension of $(\mathcal{L}, \le)$ when
     \begin{enumerate}
@@ -2294,7 +2640,6 @@ Another possible definition of the De Concini-Procesi wonderful model is given b
         \[ x \le y \implies x \le^* y.\]
     \end{enumerate}
 \end{defn}
-\end{comment}
 
 We give here some notions about blowups in $\mathbb{C}^n$.
 
@@ -2445,8 +2790,9 @@ Finally the following theorem gives us the geometric interpretation of the Chow 
     Let $\mathcal{L} = \mathcal{L}(\mathcal{A})$ the lattice of a linear essential hyperplanes arrangement $\mathcal{A}$, and $\mathcal{G}$ a building set which contains the total intersections of $\mathcal{A}$. Then, $\mathcal{A}(\mathcal{L}, \mathcal{G})$ is isomorphic to the integral cohomology algebra of the projective arrangement model $Y_{\mathcal{A},\mathcal{G}}^{\mathbb{P}}$
     \[ \mathcal{A}(\mathcal{L}, \mathcal{G}) \simeq H^*(Y_{\mathcal{A},\mathcal{G}}^{\mathbb{P}}, \mathbb{Z}).\]
 \end{thm}
+\end{comment}
 
-\begin{comment}
+\begin{comment} VERSION 1
 \section{Geometric interpretation of the Chow Ring}
 In this section we provide two different definitions of the De Concini-Procesi wonderful arrangement models. The first one describes the model as the closure of an open embeddings of the arrangement complement in a product of projective spaces. The second definition describes the model as the result of a sequence of blowups of $\mathbb{P}^n$ along certain subspaces.
 A more complete treatment of these arguments can be found in \cite{feichtner2004conciniprocesiwonderfularrangementmodels}.
@@ -2567,14 +2913,11 @@ The proof of the theorem can be found in \cite{DP2}.
 
 \end{comment}
 
-
-
-
 \chapter{Symmetric Chains and equivariant relations}
 
 In this chapter we discuss the main theorem of this work.
 In the first section we introduce symmetric chain decompositions for a poset. 
-Then we prove a theorem about the existence of injections and isomorphisms between certain grades of the Feichtner-Yuzviski basis. We finish by discussing the hypothesis of the theorem and by giving a conuterexample where the theorem fails.
+Then we prove a theorem about the existence of injections and isomorphisms between certain grades of the Feichtner-Yuzvinsky basis. We finish by discussing the hypothesis of the theorem and by giving a counterexample where the theorem fails.
 
 \section{Symmetric Chain Decomposition}
 In this section we introduce symmetric chain decomposition which is a way to decompose a poset in a disjoint union of symmetric total ordered set.
@@ -3051,7 +3394,7 @@ We can now proceed with the proof of the main theorem.
     By the uniqueness of the fiber, the element $a' \in FY^k$ is unique, so $\pi$ is an isomorphism.
 
     Finally, we prove that $\pi$ and $\lambda$ are $G$-equivariant.
-    Consider $N^+ = \{F_1, \dots, F_l, F_{l+1} := E \}$, and since $\pi$ and $\lambda$ act similarly we can consider a function $f$ either equalt to $\pi$ or $\lambda$. Then $f$ maps a monomial $a = \prod_{i = 1}^{l+1} x_{F_i}^{m_i}$ as follows:
+    Consider $N^+ = \{F_1, \dots, F_l, F_{l+1} := E \}$, and since $\pi$ and $\lambda$ act similarly we can consider a function $f$ either equal to $\pi$ or $\lambda$. Then $f$ maps a monomial $a = \prod_{i = 1}^{l+1} x_{F_i}^{m_i}$ as follows:
     \[ a = \prod_{i = 1}^{l+1} x_{F_i}^{m_i} \longmapsto f(a) = \prod_{i = 1}^{l+1} x_{F_i}^{m_i'}\]
     where the exponents $m_1',\,  \dots, \, m_l', \, m_{l+1}'$ are uniquely determined by the linear ordering $(F_1, \dots, F_l)$ and by the data:
     \[\left( (m_1, \dots, m_l, \, m_{l+1}), (m_{N ^+}(F_1),\, m_{N ^+}(F_2),\, \dots,m_{N ^+}(F_l),\, m_{N ^+}(E)) \right).\]
