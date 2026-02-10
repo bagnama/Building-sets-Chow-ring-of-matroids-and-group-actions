@@ -28,14 +28,14 @@ Let $\mathcal{M}$ be a matroid with lattice of flats $\mathcal{L}$ of rank $r+1$
 ```
 satisfy the following:
 
-[1] (Poincarè duality) For every $k\le \frac{r}{2}$, there is a perfect $\mathbb{Z}$-bilinear pairing:
+$\hspace{1cm}(1)$ (Poincarè duality) For every $k\le \frac{r}{2}$, there is a perfect $\mathbb{Z}$-bilinear pairing:
 ```math
     A^k \times A^{r-k} \longrightarrow \mathbb{Z}; \ 
     (a,b) \longmapsto \deg(a \cdot b)
 ```
 that induces an isomorphism $A^{r-k} \simeq \text{Hom}_{\mathbb{Z}}(A^k, \mathbb{Z}).$
 
-[2] (Hard Lefschetz) The Chow ring with real coefficients 
+$\hspace{1cm}(2)$ (Hard Lefschetz) The Chow ring with real coefficients 
 ```math
     \mathcal{A}_{\mathbb{R}}(\mathcal{L}, \mathcal{G}) = \bigoplus_{k = 0}^r A^k_{\mathbb{R}}
 ```
@@ -48,7 +48,7 @@ In particular the multiplication by $\omega$ is an injection:
     A^k_{\mathbb{R}} \hookrightarrow A^{k+1}_{\mathbb{R}}, \text{for } k \le \frac{r}{2}.
 ```
 
-[3] (Hodge-Riemann inequality) Each Lefschetz element $\omega$ define a quadratic form 
+$\hspace{1cm}(3)$ (Hodge-Riemann inequality) Each Lefschetz element $\omega$ define a quadratic form 
 ```math
     a \longmapsto (-1)^k \deg(a \cdot \omega^{r-2k} \cdot a)
 ```
@@ -68,9 +68,9 @@ In this thesis we focused primarily on a 2024 work by Angarone, Nathanson and Re
 #### Theorem B
 Let $\mathcal{M}$ be a simple matroid with lattice of flats $\mathcal{L}$, $\mathcal{G}$ a building set that contains $\hat{1}$. Let $G$ a group setwise stabilizing $\mathcal{G}$ acting on $\mathcal{M}$ as in Section 3.2. Then there exists:
 
-[1] $G$-equivariant bijections $\pi : FY^k \longrightarrow FY^{r-k}$, for $k \le \frac{r}{2}$;
+$\hspace{1cm}(1)$ $G$-equivariant bijections $\pi : FY^k \longrightarrow FY^{r-k}$, for $k \le \frac{r}{2}$;
 
-[2]$G$-equivariant injections $\lambda : FY^k \longrightarrow FY^{k+1}$, for $k < \frac{r}{2}$.
+$\hspace{1cm}(2)$ $G$-equivariant injections $\lambda : FY^k \longrightarrow FY^{k+1}$, for $k < \frac{r}{2}$.
 
 
 To prove this result they used symmetric chain decompositions of a poset. A symmetric chain in a ranked poset is a chain that is symmetric with respect to the middle degree of the poset. The idea is to decompose the $FY$ basis in a disjoint union of symmetric chains, ordered by divisibility, and to define the injections and isomorphisms as functions acting on the elements of the chains in the decomposition.
